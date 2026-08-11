@@ -75,3 +75,25 @@ Molto importante perchè vado ad inserire le foreign key cioè ad esempio il ID 
 - Istruire i nostri modelli relazionali che interagiscono fra di loro
 
 -- Traversalmodel: dal modello mproduct, attraverso il modello user da cui vado a recuperare le informazioni del nome. Si intende la capacità dei modelli di recuperare le innformazioni dei modelli relazionati
+
+## Relazioni Many to Many: N to N 
+
+- Ci creiamo due modelli da mettere in relazione N - N
+- Creare la migrazione per i modelli
+- Creare la migrazione per la tabella pivot
+    -  php artisan make:migration create_article_tag_table
+    - La tabella pivot si crea mettendo i nomi dei modelli al singolare minuscolo in ordine alfabetico
+- Inserisco nella migrazione le due Foreign Key
+- Istruire i modelli alla relazione many to many
+
+
+## LIVEWIRE
+- Un framework per creare delle UI (User Interface) reattive rimanendo nel linguaggio PHP
+
+## Installazione
+
+- composer require livewire/livewire
+- php artisan make:livewire counter
+
+## Creazione di un componente
+- php artisan make:livewire nome-componente

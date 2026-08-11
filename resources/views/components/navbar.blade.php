@@ -9,23 +9,10 @@
         <li class="nav-item">
           <a class="nav-link text-white" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="{{route('product.index')}}">I miei prodotti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="{{route('article.index')}}">I miei articoli</a>
-        </li>
         @auth
-        <li class="nav-item">
-          <a class="nav-link text-white" aria-disabled="false" href="{{route('product.create')}}">Crea Prodotto</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link text-white" aria-disabled="false" href="{{route('article.create')}}">Crea Articolo</a>
-        </li>
         @endauth
 
         @guest
-
         @endguest
         
         @guest
